@@ -1,0 +1,31 @@
+language: node_js
+dist: bionic
+node_js:
+  - "stable"
+
+notifications:
+  email: false
+
+git:
+  quiet: true
+
+install:
+  - npm install
+
+script:
+  - npm test
+
+before_deploy:
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  repo: mal-lang/mal-lang.github.io
+  target_branch: master
+  fqdn: mal-lang.org
+  project_name: malweb
+  on:
+    branch: react-src
