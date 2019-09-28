@@ -17,6 +17,10 @@ script:
 
 before_deploy:
   - npm run build
+  - "echo '---' > build/404.html"
+  - "echo 'permalink: /404.html' >> build/404.html"
+  - "echo '---' >> build/404.html"
+  - "cat build/index.html >> build/404.html"
 
 deploy:
   provider: pages
