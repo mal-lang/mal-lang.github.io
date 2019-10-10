@@ -16,7 +16,7 @@ const HeaderContent = () =>
         width: '1.6em',
         marginRight: '0.3em',
       }}
-  src="helmet.svg" />
+  src="/helmet.svg" />
     M A L
   </div>
 const Heading = ({ mobile }) => (

@@ -56,7 +56,7 @@ const MobileContainer = ({ children, location }) => {
           inverted
           textAlign='center'
           style={{
-            backgroundImage: 'url(./Forerunner.jpg)',
+            backgroundImage: 'url(/Forerunner.jpg)',
             backgroundSize: 'cover',
             minHeight: 350,
             padding: '1em 0em'

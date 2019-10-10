@@ -41,7 +41,7 @@ const Layout = () => (
             </p>
             <p style={{ fontSize: '1.33em' }}>
               MAL is open source under a permissive Apache 2.0 license and
-              based on a decade of research Royal Institute of Technology, KTH.
+              based on a decade of research at KTH Royal Institute of Technology.
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -99,16 +99,16 @@ const Layout = () => (
       <Divider id="who" horizontal>Who uses MAL?</Divider>
       <Grid relaxed container stackable columns={4} verticalAlign="middle">
         <Grid.Column>
-          <Image size="small" centered src='energyshield.png' />
+          <Image size="small" centered src='/energyshield.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" centered src='foreseeti.png' />
+          <Image size="small" centered src='/foreseeti.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" centered src='kth.png' />
+          <Image size="small" centered src='/kth.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" centered src='autosec.png' />
+          <Image size="small" centered src='/autosec.png' />
         </Grid.Column>
       </Grid>
     </Segment>
@@ -126,42 +126,7 @@ const Layout = () => (
           <List.Item as="a" href="https://github.com/mal-lang/exampleLang" target="_blank">https://github.com/mal-lang/exampleLang</List.Item>
         </List>
       </Container>
-    </Segment>
-    {/*<Segment inverted vertical style={{ padding: '5em 0em' }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
-              <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as='h4' inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>*/}
-  </ResponsiveContainer>
+    </Segment>  </ResponsiveContainer>
 )
 
 
