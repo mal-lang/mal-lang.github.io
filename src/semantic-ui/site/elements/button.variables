@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@primaryColor: @siteColor2;
+@primaryTextColor: @black;

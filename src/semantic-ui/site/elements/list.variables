@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@linkListItemColor: #4183C4;
+@linkListItemHoverColor: #1e70bf;
