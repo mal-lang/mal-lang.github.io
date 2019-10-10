@@ -11,6 +11,7 @@ import {
 const HeaderContent = () =>
   <div>
     <img
+      alt="MAL logo"
       style={{
         width: '1.6em',
         marginRight: '0.3em',

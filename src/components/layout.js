@@ -99,16 +99,16 @@ const Layout = () => (
       <Divider id="who" horizontal>Who uses MAL?</Divider>
       <Grid relaxed container stackable columns={4} verticalAlign="middle">
         <Grid.Column>
-          <Image size="small" verticalAlign='center' centered src='energyshield.png' />
+          <Image size="small" centered src='energyshield.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" verticalAlign='center' centered src='foreseeti.png' />
+          <Image size="small" centered src='foreseeti.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" verticalAlign='center' centered src='kth.png' />
+          <Image size="small" centered src='kth.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" verticalAlign='center' centered src='autosec.png' />
+          <Image size="small" centered src='autosec.png' />
         </Grid.Column>
       </Grid>
     </Segment>
