@@ -1,13 +1,21 @@
 import React from 'react';
-import Routes from './routes';
-import './App.css';
+import Layout from './components/layout';
+import ScrollHandler from './components/scrollhandler';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Routes />
-    </div>
+    <Router>
+        <ScrollHandler />
+        <Switch>
+          <Route path="/">
+            <Layout />
+          </Route>
+        </Switch>
+    </Router>
   );
 }
-
-export default App;

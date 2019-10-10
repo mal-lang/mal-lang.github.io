@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@invertedBackground: @siteMainColor;
+@secondaryPointingBorderWidth: 0;
+@secondaryPointingBorderColor: none;
