@@ -22,13 +22,13 @@ const Layout = () => (
               What is MAL?
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              A language to create domain specific threat modeling systems, such
-              as SCADA/OT, automotive and cloud.
+              A language to create cyber threat modeling systems for specific domains
+              such as SCADA/OT, automotive and cloud.
             </p>
             <p style={{ fontSize: '1.33em' }}>
               In turn, such a system allows for cyber threat modeling and attack
               simulations of specific environments – a power grid, a vehicle
-              platform and particular cloud infrastructure
+              platform or a particular cloud infrastructure.
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
@@ -99,16 +99,16 @@ const Layout = () => (
       <Divider id="who" horizontal>Who uses MAL?</Divider>
       <Grid relaxed container stackable columns={4} verticalAlign="middle">
         <Grid.Column>
-          <Image size="small" centered src='/energyshield.png' />
+          <Image as="a" href="https://energy-shield.eu/" size="small" centered src='/energyshield.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" centered src='/foreseeti.png' />
+          <Image as="a" href="https://www.foreseeti.com/" size="small" centered src='/foreseeti.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" centered src='/kth.png' />
+          <Image as="a" href="https://www.kth.se/" size="small" centered src='/kth.png' />
         </Grid.Column>
         <Grid.Column>
-          <Image size="small" centered src='/autosec.png' />
+          <Image as="a" href="https://autosec.se/" size="small" centered src='/autosec.png' />
         </Grid.Column>
       </Grid>
     </Segment>
