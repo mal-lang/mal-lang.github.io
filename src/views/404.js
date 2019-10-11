@@ -2,12 +2,6 @@ import React from 'react';
 import ResponsiveContainer from '../components/responsivecontainer';
 import {
   Container,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Image,
-  List,
   Segment,
 } from 'semantic-ui-react';
 
