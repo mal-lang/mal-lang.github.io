@@ -14,9 +14,9 @@ install:
 
 script:
   - npm test
+  - npm run build
 
 before_deploy:
-  - npm run build
   - "echo '---' > build/404.html"
   - "echo 'permalink: /404.html' >> build/404.html"
   - "echo '---' >> build/404.html"
