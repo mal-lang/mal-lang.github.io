@@ -41,6 +41,9 @@ const MobileContainer = ({ children, location }) => {
         <Menu.Item onClick={handleSidebarHide} active={location.hash === '#learnmore'}>
           <Link to="/#learnmore">Learn more</Link>
         </Menu.Item>
+        <Menu.Item onClick={handleSidebarHide} active={location.hash === '#video'}>
+          <Link to="/#video">Watch video</Link>
+        </Menu.Item>
         <Menu.Item onClick={handleSidebarHide} active={location.hash === '#who'}>
           <Link to="/#who">Who uses MAL?</Link>
         </Menu.Item>
