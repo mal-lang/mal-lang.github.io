@@ -52,6 +52,9 @@ const DesktopContainer = ({ children, location }) => {
               <Menu.Item active={location.hash === '#learnmore'}>
                 <Link to="/#learnmore">Learn more</Link>
               </Menu.Item>
+              <Menu.Item active={location.hash === '#video'}>
+                <Link to="/#video">Watch video</Link>
+              </Menu.Item>
               <Menu.Item active={location.hash === '#who'}>
                 <Link to="/#who">Who uses MAL?</Link>
               </Menu.Item>
