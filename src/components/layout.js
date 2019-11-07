@@ -104,7 +104,7 @@ const Layout = () => (
     </Segment>
     <Segment textAlign='center' style={{ padding: '0em 0em 8em 0em' }} basic>
       <Divider id="video" horizontal>Video</Divider>
-      <iframe title="getStartedVideo" width={ window.innerWidth > 560 ? 560 : Math.round(window.innerWidth) } height={ window.innerWidth > 560 ? 315 : Math.round(window.innerWidth * (9/16)) } src="https://www.youtube-nocookie.com/embed/He9v_qykfNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe title="getStartedVideo" width={ window.innerWidth > 560 ? 560 : Math.round(window.innerWidth) } height={ window.innerWidth > 560 ? 315 : Math.round(window.innerWidth * (9/16)) } src="https://www.youtube-nocookie.com/embed/He9v_qykfNM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </Segment>
     <Segment style={{ padding: '0em' }} textAlign='center' basic>
       <Divider id="who" horizontal>Who uses MAL?</Divider>
