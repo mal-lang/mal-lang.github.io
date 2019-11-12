@@ -124,7 +124,7 @@ const Layout = () => (
       </Grid>
     </Segment>
     <Segment style={{ padding: '8em 0em' }} textAlign='center' basic>
-      <Divider horizontal>Resources</Divider>
+      <Divider id="resources" horizontal>Resources</Divider>
       <Container text>
         <List link>
           <List.Item>

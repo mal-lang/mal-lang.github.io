@@ -18,6 +18,11 @@ const MobileContainer = ({ children, location }) => {
   const handleSidebarHide = () => setSidebarIsOpen(false);
   const handleToggle = () => setSidebarIsOpen(true);
 
+  const menuItemStyle = {
+    height: '44.2px',
+    width: '100%',
+    padding: '13px 16px'
+  }
 
   return (
     <Responsive
@@ -33,19 +38,22 @@ const MobileContainer = ({ children, location }) => {
         vertical
         visible={sidebarIsOpen}
       >
-        <Menu.Item onClick={handleSidebarHide} active={location.hash === ''}>
-          <Link to="/">Home</Link>
+        <Menu.Item fitted={true} onClick={handleSidebarHide} active={location.hash === ''}>
+          <Link to="/"><div style={menuItemStyle}>Home</div></Link>
         </Menu.Item>
-        <Menu.Item onClick={handleSidebarHide} active={location.hash === '#what'}>
-          <Link to="/#what">About</Link></Menu.Item>
-        <Menu.Item onClick={handleSidebarHide} active={location.hash === '#learnmore'}>
-          <Link to="/#learnmore">Learn more</Link>
+        <Menu.Item fitted={true} onClick={handleSidebarHide} active={location.hash === '#what'}>
+          <Link to="/#what"><div style={menuItemStyle}>About</div></Link></Menu.Item>
+        <Menu.Item fitted={true} onClick={handleSidebarHide} active={location.hash === '#learnmore'}>
+          <Link to="/#learnmore"><div style={menuItemStyle}>Learn more</div></Link>
         </Menu.Item>
-        <Menu.Item onClick={handleSidebarHide} active={location.hash === '#video'}>
-          <Link to="/#video">Watch video</Link>
+        <Menu.Item fitted={true} onClick={handleSidebarHide} active={location.hash === '#video'}>
+          <Link to="/#video"><div style={menuItemStyle}>Watch video</div></Link>
         </Menu.Item>
-        <Menu.Item onClick={handleSidebarHide} active={location.hash === '#who'}>
-          <Link to="/#who">Who uses MAL?</Link>
+        <Menu.Item fitted={true} onClick={handleSidebarHide} active={location.hash === '#who'}>
+          <Link to="/#who"><div style={menuItemStyle}>Who uses MAL?</div></Link>
+        </Menu.Item>
+        <Menu.Item fitted={true} onClick={handleSidebarHide} active={location.hash === '#resources'}>
+          <Link to="/#resources"><div style={menuItemStyle}>Resources</div></Link>
         </Menu.Item>
         <Menu.Item>
           <Button as="a" href="https://github.com/mal-lang/exampleLang/blob/master/README.md" target="_blank" primary size='large'>
