@@ -58,6 +58,9 @@ const DesktopContainer = ({ children, location }) => {
               <Menu.Item active={location.hash === '#who'}>
                 <Link to="/#who">Who uses MAL?</Link>
               </Menu.Item>
+              <Menu.Item active={location.hash === '#resources'}>
+                <Link to="/#resources">Resources</Link>
+              </Menu.Item>
               <Menu.Item>
                 <Button as="a" href="https://github.com/mal-lang/exampleLang/blob/master/README.md" target="_blank" primary size='large'>
                   Get Started
