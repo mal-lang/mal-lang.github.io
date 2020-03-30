@@ -179,12 +179,13 @@ const Layout = () => (
           </a>
           {'.'}
         </p>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <img
             alt="MAL logo"
             style={{
               width: '3em',
-              height: '3em'
+              height: '3em',
+              alignSelf: 'center'
             }}
             src="/helmet.svg"
           />
