@@ -169,15 +169,15 @@ const Layout = () => (
       <Divider id="acknowledgements" horizontal>Acknowledgements</Divider>
       <Container text>
         <p>
-          {'Copyright © 2020 '}
+          Copyright &copy; 2020{' '}
           <a href="https://www.foreseeti.com/">
-            {'Foreseeti AB'}
+            <span style={{ whiteSpace: 'nowrap' }}>Foreseeti AB</span>
           </a>
-          {', Licensed under the '}
+          , Licensed under the{' '}
           <a href="https://www.apache.org/licenses/LICENSE-2.0">
-            {'Apache License, Version 2.0'}
+            <span style={{ whiteSpace: 'nowrap' }}>Apache License, Version 2.0</span>
           </a>
-          {'.'}
+          .
         </p>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <img
@@ -190,27 +190,33 @@ const Layout = () => (
             src="/helmet.svg"
           />
           <p>
-            {'This work, "MAL logo", is a derivative of "'}
+            This work, &quot;<span style={{ whiteSpace: 'nowrap' }}>MAL logo</span>&quot;, is a derivative of &quot;
             <a href="https://thenounproject.com/term/diving-helmet/2448842/">
-              {'Diving Helmet'}
+              <span style={{ whiteSpace: 'nowrap' }}>Diving Helmet</span>
             </a>
-            {'" by '}
+            &quot; icon by{' '}
             <a href="https://thenounproject.com/madexmadeicons/">
-              {'Made x Made Icons'}
+              <span style={{ whiteSpace: 'nowrap' }}>Made x Made Icons</span>
             </a>
-            {', used under '}
+            {' '}from{' '}
+            <a href="https://thenounproject.com/">
+              <span style={{ whiteSpace: 'nowrap' }}>the Noun Project</span>
+            </a>
+            , used under{' '}
             <a href="https://creativecommons.org/licenses/by/3.0/">
-              {'CC BY 3.0'}
+              <span style={{ whiteSpace: 'nowrap' }}>CC BY 3.0</span>
             </a>
-            {'. "MAL logo" is licensed under '}
+            .
+            <br/>
+            &quot;<span style={{ whiteSpace: 'nowrap' }}>MAL logo</span>&quot; is licensed under{' '}
             <a href="https://creativecommons.org/licenses/by/4.0/">
-              {'CC BY 4.0'}
+              <span style={{ whiteSpace: 'nowrap' }}>CC BY 4.0</span>
             </a>
-            {' by '}
+            {' '}by{' '}
             <a href="https://www.foreseeti.com/">
-              {'Foreseeti AB'}
+              <span style={{ whiteSpace: 'nowrap' }}>Foreseeti AB</span>
             </a>
-            {'.'}
+            .
           </p>
         </div>
       </Container>
