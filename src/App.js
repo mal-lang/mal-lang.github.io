@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Foreseeti AB
+ * Copyright 2020-2022 Foreseeti AB <https://foreseeti.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,24 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import React from 'react';
 import Layout from './components/layout';
 import NotFound from './views/404';
 import ScrollHandler from './components/scrollhandler';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
   return (
-    <Router>
-        <ScrollHandler />
-        <Switch>
-          <Route path="/" component={Layout} />
-          <Route component={NotFound} />
-        </Switch>
-    </Router>
+    <BrowserRouter>
+      <ScrollHandler location={window.location} />
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

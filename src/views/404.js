@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Foreseeti AB
+ * Copyright 2020-2022 Foreseeti AB <https://foreseeti.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,15 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import React from 'react';
 import ResponsiveContainer from '../components/responsivecontainer';
-import {
-  Container,
-  Segment,
-} from 'semantic-ui-react';
+import { Container, Segment } from 'semantic-ui-react';
 
-
-const Layout = () =>
+const NotFound = () => (
   <ResponsiveContainer>
     <Container>
       <Segment style={{ padding: '8em 0em' }} basic>
@@ -29,5 +26,6 @@ const Layout = () =>
       </Segment>
     </Container>
   </ResponsiveContainer>
+);
 
-export default Layout;
+export default NotFound;

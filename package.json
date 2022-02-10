@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
-    "semantic-ui-react": "^0.88.2"
+    "@artsy/fresnel": "^3.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^4.0.3",
+    "semantic-ui-less": "^2.4.1",
+    "semantic-ui-react": "^2.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build && echo 'mal-lang.org' >build/CNAME && cp -fp build/index.html build/404.html",
+    "deploy": "gh-pages --dist build --branch master --message Deploy --no-history",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -31,8 +35,9 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^5.6.4",
-    "@semantic-ui-react/craco-less": "^1.2.1",
-    "semantic-ui-less": "^2.4.1"
+    "@craco/craco": "^6.4.3",
+    "@semantic-ui-react/craco-less": "^1.2.6",
+    "gh-pages": "^3.2.3",
+    "prettier": "2.5.1"
   }
 }
