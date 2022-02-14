@@ -1,27 +1,29 @@
+================================================================================
+== malweb                                                                     ==
+================================================================================
+
 malweb
-Copyright 2020 Foreseeti AB
+Copyright © 2020-2022 Foreseeti AB <https://foreseeti.com>
 
-This product includes software developed at
-Foreseeti AB <https://www.foreseeti.com/>.
+Licensed under the Apache License, Version 2.0
+<https://www.apache.org/licenses/LICENSE-2.0>.
 
-=====================================
-Files: public/android-chrome-192x192.png
-       public/android-chrome-512x512.png
-       public/apple-touch-icon.png
-       public/favicon-16x16.png
-       public/favicon-32x32.png
-       public/favicon.ico
-       public/helmet.svg
+================================================================================
+== public/android-chrome-192x192.png                                          ==
+== public/android-chrome-512x512.png                                          ==
+== public/apple-touch-icon.png                                                ==
+== public/favicon-16x16.png                                                   ==
+== public/favicon-32x32.png                                                   ==
+== public/favicon.ico                                                         ==
+== public/helmet.svg                                                          ==
+================================================================================
 
-Derivative of:
+This work, "MAL logo", is a derivative of
+"Diving Helmet" icon <https://thenounproject.com/term/diving-helmet/2448842/>
+by Made x Made Icons <https://thenounproject.com/madexmadeicons/>
+from the Noun Project <https://thenounproject.com/>,
+used under CC BY 3.0 <https://creativecommons.org/licenses/by/3.0/>.
 
-Title: Diving Helmet
-Author: Made x Made Icons <https://thenounproject.com/madexmadeicons/>
-Source: The Noun Project <https://thenounproject.com/term/diving-helmet/2448842/>
-License: CC BY 3.0 <https://creativecommons.org/licenses/by/3.0/>
-
-Derivative work:
-
-Title: MAL logo
-Author: Foreseeti AB <https://www.foreseeti.com/>
-License: CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/>
+"MAL logo"
+is licensed under CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/>
+by Foreseeti AB <https://foreseeti.com>.

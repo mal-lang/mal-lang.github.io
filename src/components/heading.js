@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Foreseeti AB
+ * Copyright 2020-2022 Foreseeti AB <https://foreseeti.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,18 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import PropTypes from 'prop-types'
+
+import PropTypes from 'prop-types';
 import React from 'react';
-import {
-  Button,
-  Container,
-  Header,
-  Icon,
-} from 'semantic-ui-react';
+import { Button, Container, Header, Icon } from 'semantic-ui-react';
 
-
-const HeaderContent = () =>
-  <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+const HeaderContent = () => (
+  <div
+    style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}
+  >
     <img
       alt="MAL logo"
       style={{
@@ -34,12 +31,13 @@ const HeaderContent = () =>
       }}
       src="/helmet.svg"
     />
-    <p style={{marginTop: '0.5em'}}>M A L</p>
+    <p style={{ marginTop: '0.5em' }}>M A L</p>
   </div>
+);
 const Heading = ({ mobile }) => (
   <Container text>
     <Header
-      as='h1'
+      as="h1"
       content={<HeaderContent />}
       inverted
       style={{
@@ -50,8 +48,8 @@ const Heading = ({ mobile }) => (
       }}
     />
     <Header
-      as='h2'
-      content='Meta Attack Language'
+      as="h2"
+      content="Meta Attack Language"
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -60,16 +58,22 @@ const Heading = ({ mobile }) => (
       }}
     />
     <Header
-      as='h3'
-      content='The open source platform for creation of cyber threat modeling systems'
+      as="h3"
+      content="The open source platform for creation of cyber threat modeling systems"
       inverted
       style={{
         fontStyle: 'italic',
       }}
     />
-    <Button as="a" href="https://github.com/mal-lang/exampleLang/blob/master/README.md" target="_blank" primary size='huge'>
+    <Button
+      as="a"
+      href="https://github.com/mal-lang/exampleLang/blob/master/README.md"
+      target="_blank"
+      primary
+      size="huge"
+    >
       Get Started
-      <Icon name='right arrow' />
+      <Icon name="right arrow" />
     </Button>
   </Container>
 );

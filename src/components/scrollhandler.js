@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Foreseeti AB
+ * Copyright 2020-2022 Foreseeti AB <https://foreseeti.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,30 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { useEffect } from "react";
-import PropTypes from "prop-types";
-import { withRouter } from "react-router-dom";
 
-const ScrollHandler = ({ location }) => {
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { useLocation } from 'react-router-dom';
+
+const ScrollHandler = () => {
+  let location = useLocation();
+
   useEffect(() => {
-    const loc = location.hash.replace("#", "");
+    const loc = location.hash.replace('#', '');
     if (loc === '') {
       setTimeout(() => {
         window.scrollTo({
-          behavior: "smooth",
-          top: 0
+          behavior: 'smooth',
+          top: 0,
         });
       }, 100);
     } else {
-
-    const element = document.getElementById(loc);
+      const element = document.getElementById(loc);
       if (element) {
-        const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const currentScroll =
+          document.documentElement.scrollTop || document.body.scrollTop;
         const pos = element.getBoundingClientRect();
         setTimeout(() => {
           window.scrollTo({
-            behavior: element ? "smooth" : "auto",
-            top: element ? currentScroll + (pos.y - 50) : 0
+            behavior: element ? 'smooth' : 'auto',
+            top: element ? currentScroll + (pos.y - 50) : 0,
           });
         }, 100);
       }
@@ -52,8 +55,8 @@ ScrollHandler.propTypes = {
     search: PropTypes.string,
     hash: PropTypes.string,
     state: PropTypes.any,
-    key: PropTypes.string
-  }).isRequired
+    key: PropTypes.string,
+  }).isRequired,
 };
 
-export default withRouter(ScrollHandler);
+export default ScrollHandler;

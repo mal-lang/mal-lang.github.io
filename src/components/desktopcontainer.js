@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Foreseeti AB
+ * Copyright 2020-2022 Foreseeti AB <https://foreseeti.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,28 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import PropTypes from 'prop-types'
+
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Heading from './heading';
-import { getWidth } from './util';
 import {
   Button,
   Container,
   Menu,
-  Responsive,
   Segment,
   Visibility,
 } from 'semantic-ui-react';
 
-const DesktopContainer = ({ children, location }) => {
+const DesktopContainer = ({ children }) => {
+  const location = useLocation();
   const [fixed, setFixed] = useState(false);
 
   const hideFixedMenu = () => setFixed(false);
   const showFixedMenu = () => setFixed(true);
 
   return (
-    <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+    <div>
       <Visibility
         once={false}
         onBottomPassed={showFixedMenu}
@@ -42,7 +42,7 @@ const DesktopContainer = ({ children, location }) => {
       >
         <Segment
           inverted
-          textAlign='center'
+          textAlign="center"
           style={{
             backgroundImage: 'url(/Forerunner.jpg)',
             backgroundSize: 'cover',
@@ -56,14 +56,15 @@ const DesktopContainer = ({ children, location }) => {
             inverted
             pointing={!fixed}
             secondary={!fixed}
-            size='large'
+            size="large"
           >
             <Container>
               <Menu.Item active={location.hash === ''}>
                 <Link to="/">Home</Link>
               </Menu.Item>
               <Menu.Item active={location.hash === '#what'}>
-                <Link to="/#what">About</Link></Menu.Item>
+                <Link to="/#what">About</Link>
+              </Menu.Item>
               <Menu.Item active={location.hash === '#learnmore'}>
                 <Link to="/#learnmore">Learn more</Link>
               </Menu.Item>
@@ -74,7 +75,13 @@ const DesktopContainer = ({ children, location }) => {
                 <Link to="/#resources">Resources</Link>
               </Menu.Item>
               <Menu.Item>
-                <Button as="a" href="https://github.com/mal-lang/exampleLang/blob/master/README.md" target="_blank" primary size='large'>
+                <Button
+                  as="a"
+                  href="https://github.com/mal-lang/exampleLang/blob/master/README.md"
+                  target="_blank"
+                  primary
+                  size="large"
+                >
                   Get Started
                 </Button>
               </Menu.Item>
@@ -85,9 +92,9 @@ const DesktopContainer = ({ children, location }) => {
       </Visibility>
 
       {children}
-    </Responsive>
+    </div>
   );
-}
+};
 
 DesktopContainer.propTypes = {
   children: PropTypes.node,
@@ -96,8 +103,8 @@ DesktopContainer.propTypes = {
     search: PropTypes.string,
     hash: PropTypes.string,
     state: PropTypes.any,
-    key: PropTypes.string
-  }).isRequired
+    key: PropTypes.string,
+  }).isRequired,
 };
 
-export default withRouter(DesktopContainer);
+export default DesktopContainer;
