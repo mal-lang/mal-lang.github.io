@@ -16,7 +16,7 @@
 
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Heading from './heading';
 import {
   Button,
@@ -26,7 +26,8 @@ import {
   Visibility,
 } from 'semantic-ui-react';
 
-const DesktopContainer = ({ children, location }) => {
+const DesktopContainer = ({ children }) => {
+  const location = useLocation();
   const [fixed, setFixed] = useState(false);
 
   const hideFixedMenu = () => setFixed(false);

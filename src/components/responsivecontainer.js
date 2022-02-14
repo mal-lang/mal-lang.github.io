@@ -32,10 +32,10 @@ const { MediaContextProvider, Media } = createMedia({
 const ResponsiveContainer = ({ children }) => (
   <MediaContextProvider>
     <Media at="sm">
-      <MobileContainer location={window.location}>{children}</MobileContainer>
+      <MobileContainer>{children}</MobileContainer>
     </Media>
     <Media greaterThanOrEqual="md">
-      <DesktopContainer location={window.location}>{children}</DesktopContainer>
+      <DesktopContainer>{children}</DesktopContainer>
     </Media>
   </MediaContextProvider>
 );

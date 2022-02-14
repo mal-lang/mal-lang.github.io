@@ -17,7 +17,7 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import Heading from './heading';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
   Button,
   Container,
@@ -27,7 +27,9 @@ import {
   Sidebar,
 } from 'semantic-ui-react';
 
-const MobileContainer = ({ children, location }) => {
+const MobileContainer = ({ children }) => {
+  const location = useLocation();
+
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   const handleSidebarHide = () => setSidebarIsOpen(false);
   const handleToggle = () => setSidebarIsOpen(true);

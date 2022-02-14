@@ -23,7 +23,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 export default function App() {
   return (
     <BrowserRouter>
-      <ScrollHandler location={window.location} />
+      <ScrollHandler />
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="*" element={<NotFound />} />
