@@ -16,7 +16,7 @@
     "deploy": "gh-pages --dist build --branch master --message Deploy --no-history",
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "craco test --passWithNoTests",
     "eject": "craco eject"
   },
   "eslintConfig": {
