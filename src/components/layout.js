@@ -17,14 +17,8 @@
 import React from 'react';
 import ResponsiveContainer from './responsivecontainer';
 import {
-  Button,
   Container,
   Divider,
-  Grid,
-  Header,
-  Icon,
-  Image,
-  List,
   Segment,
 } from 'semantic-ui-react';
 
@@ -36,26 +30,6 @@ const referenceButtonStyle = {
 const Layout = () => (
   <ResponsiveContainer>
     <Segment style={{ paddingBottom: '8em' }} textAlign="center" basic>
-      <Divider id="resources" horizontal>
-        Resources
-      </Divider>
-      <Container text>
-        <List link>
-          <List.Item>
-            <Button
-              as="a"
-              style={referenceButtonStyle}
-              href="https://github.com/mal-lang"
-              target="_blank"
-              primary
-              size="huge"
-            >
-              Get Started!
-              <Icon name="right arrow" />
-            </Button>
-          </List.Item>
-        </List>
-      </Container>
     </Segment>
     <Segment style={{ paddingBottom: '8em' }} textAlign="center" basic>
       <Divider id="acknowledgements" horizontal>

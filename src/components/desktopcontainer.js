@@ -19,9 +19,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Heading from './heading';
 import {
-  Button,
-  Container,
-  Menu,
   Segment,
   Visibility,
 } from 'semantic-ui-react';
@@ -51,43 +48,6 @@ const DesktopContainer = ({ children }) => {
           }}
           vertical
         >
-          <Menu
-            fixed={fixed ? 'top' : null}
-            inverted
-            pointing={!fixed}
-            secondary={!fixed}
-            size="large"
-          >
-            <Container>
-              <Menu.Item active={location.hash === ''}>
-                <Link to="/">Home</Link>
-              </Menu.Item>
-              <Menu.Item active={location.hash === '#what'}>
-                <Link to="/#what">About</Link>
-              </Menu.Item>
-              <Menu.Item active={location.hash === '#learnmore'}>
-                <Link to="/#learnmore">Learn more</Link>
-              </Menu.Item>
-              <Menu.Item active={location.hash === '#who'}>
-                <Link to="/#who">Who uses MAL?</Link>
-              </Menu.Item>
-              <Menu.Item active={location.hash === '#resources'}>
-                <Link to="/#resources">Resources</Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Button
-                  as="a"
-                  href="https://github.com/mal-lang/exampleLang/blob/master/README.md"
-                  target="_blank"
-                  primary
-                  size="large"
-                >
-                  Get Started
-                </Button>
-              </Menu.Item>
-            </Container>
-          </Menu>
-          <Heading />
         </Segment>
       </Visibility>
 
