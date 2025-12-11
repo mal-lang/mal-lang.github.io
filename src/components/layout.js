@@ -19,6 +19,8 @@ import ResponsiveContainer from './responsivecontainer';
 import {
   Container,
   Divider,
+  Icon,
+  List,
   Segment,
 } from 'semantic-ui-react';
 
