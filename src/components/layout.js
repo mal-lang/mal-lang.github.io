@@ -50,7 +50,7 @@ const Layout = () => (
               primary
               size="huge"
             >
-              Get Started
+              Get Started!
               <Icon name="right arrow" />
             </Button>
           </List.Item>
