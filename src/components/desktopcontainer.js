@@ -22,6 +22,7 @@ import {
 } from 'semantic-ui-react';
 
 const DesktopContainer = ({ children }) => {
+  const [fixed, setFixed] = useState(false);
   const hideFixedMenu = () => setFixed(false);
   const showFixedMenu = () => setFixed(true);
 
@@ -45,6 +46,10 @@ const DesktopContainer = ({ children }) => {
         >
         </Segment>
       </Visibility>
+
+      <Responsive>
+          <Menu fixed={fixed ? 'top' : null} />
+        </Responsive>
 
       {children}
     </div>
