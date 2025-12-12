@@ -19,7 +19,6 @@ import React, { useState } from 'react';
 import Heading from './heading';
 import { Link, useLocation } from 'react-router-dom';
 import {
-  Button,
   Container,
   Icon,
   Menu,
@@ -50,62 +49,6 @@ const MobileContainer = ({ children }) => {
         vertical
         visible={sidebarIsOpen}
       >
-        <Menu.Item
-          fitted={true}
-          onClick={handleSidebarHide}
-          active={location.hash === ''}
-        >
-          <Link to="/">
-            <div style={menuItemStyle}>Home</div>
-          </Link>
-        </Menu.Item>
-        <Menu.Item
-          fitted={true}
-          onClick={handleSidebarHide}
-          active={location.hash === '#what'}
-        >
-          <Link to="/#what">
-            <div style={menuItemStyle}>About</div>
-          </Link>
-        </Menu.Item>
-        <Menu.Item
-          fitted={true}
-          onClick={handleSidebarHide}
-          active={location.hash === '#learnmore'}
-        >
-          <Link to="/#learnmore">
-            <div style={menuItemStyle}>Learn more</div>
-          </Link>
-        </Menu.Item>
-        <Menu.Item
-          fitted={true}
-          onClick={handleSidebarHide}
-          active={location.hash === '#who'}
-        >
-          <Link to="/#who">
-            <div style={menuItemStyle}>Who uses MAL?</div>
-          </Link>
-        </Menu.Item>
-        <Menu.Item
-          fitted={true}
-          onClick={handleSidebarHide}
-          active={location.hash === '#resources'}
-        >
-          <Link to="/#resources">
-            <div style={menuItemStyle}>Resources</div>
-          </Link>
-        </Menu.Item>
-        <Menu.Item>
-          <Button
-            as="a"
-            href="https://github.com/mal-lang/exampleLang/blob/master/README.md"
-            target="_blank"
-            primary
-            size="large"
-          >
-            Get Started
-          </Button>
-        </Menu.Item>
       </Sidebar>
 
       <Sidebar.Pusher dimmed={sidebarIsOpen}>

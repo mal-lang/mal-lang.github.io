@@ -25,13 +25,12 @@ const HeaderContent = () => (
     <img
       alt="MAL logo"
       style={{
-        width: '2em',
-        height: '2em',
+        width: '4em',
+        height: '4em',
         marginRight: '0.3em',
       }}
       src="/helmet.svg"
     />
-    <p style={{ marginTop: '0.5em' }}>M A L</p>
   </div>
 );
 const Heading = ({ mobile }) => (
@@ -49,7 +48,7 @@ const Heading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="Meta Attack Language"
+      content="Meta Attack Language - M A L"
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -59,7 +58,7 @@ const Heading = ({ mobile }) => (
     />
     <Header
       as="h3"
-      content="The open source platform for creation of cyber threat modeling systems"
+      content="The open source platform cyber threat modeling and attack simulations"
       inverted
       style={{
         fontStyle: 'italic',
@@ -67,7 +66,7 @@ const Heading = ({ mobile }) => (
     />
     <Button
       as="a"
-      href="https://github.com/mal-lang/exampleLang/blob/master/README.md"
+      href="https://github.com/mal-lang"
       target="_blank"
       primary
       size="huge"
