@@ -19,15 +19,8 @@ import ResponsiveContainer from './responsivecontainer';
 import {
   Container,
   Divider,
-  Icon,
-  List,
   Segment,
 } from 'semantic-ui-react';
-
-const referenceButtonStyle = {
-  width: '100%',
-  maxWidth: '500px',
-};
 
 const Layout = () => (
   <ResponsiveContainer>

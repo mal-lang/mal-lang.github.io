@@ -17,7 +17,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import Heading from './heading';
-import { Link, useLocation } from 'react-router-dom';
 import {
   Container,
   Icon,
@@ -27,17 +26,10 @@ import {
 } from 'semantic-ui-react';
 
 const MobileContainer = ({ children }) => {
-  const location = useLocation();
-
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   const handleSidebarHide = () => setSidebarIsOpen(false);
   const handleToggle = () => setSidebarIsOpen(true);
 
-  const menuItemStyle = {
-    height: '44.2px',
-    width: '100%',
-    padding: '13px 16px',
-  };
 
   return (
     <div>
