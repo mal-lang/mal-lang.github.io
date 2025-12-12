@@ -22,10 +22,15 @@ import {
 } from 'semantic-ui-react';
 
 const DesktopContainer = ({ children }) => {
+  const hideFixedMenu = () => setFixed(false);
+  const showFixedMenu = () => setFixed(true);
+
   return (
     <div>
       <Visibility
         once={false}
+        onBottomPassed={showFixedMenu}
+        onBottomPassedReverse={hideFixedMenu}
       >
         <Segment
           inverted
