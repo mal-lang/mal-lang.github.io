@@ -15,43 +15,58 @@
  */
 
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
+import Heading from './heading';
 import {
+  Container,
+  Icon,
+  Menu,
   Segment,
-  Visibility,
+  Sidebar,
 } from 'semantic-ui-react';
 
 const DesktopContainer = ({ children }) => {
-  const [fixed, setFixed] = useState(false);
-  const hideFixedMenu = () => setFixed(false);
-  const showFixedMenu = () => setFixed(true);
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+  const handleSidebarHide = () => setSidebarIsOpen(false);
+  const handleToggle = () => setSidebarIsOpen(true);
+
 
   return (
     <div>
-      <Visibility
-        once={false}
-        onBottomPassed={showFixedMenu}
-        onBottomPassedReverse={hideFixedMenu}
+      <Sidebar
+        as={Menu}
+        animation="push"
+        inverted
+        onHide={handleSidebarHide}
+        vertical
+        visible={sidebarIsOpen}
       >
+      </Sidebar>
+
+      <Sidebar.Pusher dimmed={sidebarIsOpen}>
         <Segment
           inverted
           textAlign="center"
           style={{
             backgroundImage: 'url(/Forerunner.jpg)',
             backgroundSize: 'cover',
-            minHeight: 700,
+            minHeight: 350,
             padding: '1em 0em',
           }}
           vertical
         >
+          <Container>
+            <Menu inverted pointing secondary size="large">
+              <Menu.Item onClick={handleToggle}>
+                <Icon name="sidebar" />
+              </Menu.Item>
+            </Menu>
+          </Container>
+          <Heading mobile />
         </Segment>
-      </Visibility>
 
-      <Responsive>
-          <Menu fixed={fixed ? 'top' : null} />
-        </Responsive>
-
-      {children}
+        {children}
+      </Sidebar.Pusher>
     </div>
   );
 };
