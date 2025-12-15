@@ -58,7 +58,7 @@ const Heading = ({ mobile }) => (
     />
     <Header
       as="h3"
-      content="The open source platform cyber threat modeling and attack simulations"
+      content="The open source platform for cyber threat modeling and attack simulations"
       inverted
       style={{
         fontStyle: 'italic',
