@@ -51,7 +51,7 @@ const DesktopContainer = ({ children }) => {
             backgroundImage: 'url(/Forerunner.jpg)',
             backgroundSize: 'cover',
             minHeight: 350,
-            padding: '1em 0em',
+            padding: '1em 1em',
           }}
           vertical
         >
