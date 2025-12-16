@@ -31,19 +31,6 @@ const Layout = () => (
         Acknowledgements
       </Divider>
       <Container text>
-        <p>
-          Copyright &copy; 2020-2022{' '}
-          <a href="https://foreseeti.com">
-            <span style={{ whiteSpace: 'nowrap' }}>Foreseeti AB</span>
-          </a>
-          , Licensed under the{' '}
-          <a href="https://www.apache.org/licenses/LICENSE-2.0">
-            <span style={{ whiteSpace: 'nowrap' }}>
-              Apache License, Version 2.0
-            </span>
-          </a>
-          .
-        </p>
         <div
           style={{
             display: 'flex',
@@ -78,17 +65,6 @@ const Layout = () => (
             , used under{' '}
             <a href="https://creativecommons.org/licenses/by/3.0/">
               <span style={{ whiteSpace: 'nowrap' }}>CC BY 3.0</span>
-            </a>
-            .
-            <br />
-            &quot;<span style={{ whiteSpace: 'nowrap' }}>MAL logo</span>&quot;
-            is licensed under{' '}
-            <a href="https://creativecommons.org/licenses/by/4.0/">
-              <span style={{ whiteSpace: 'nowrap' }}>CC BY 4.0</span>
-            </a>{' '}
-            by{' '}
-            <a href="https://foreseeti.com">
-              <span style={{ whiteSpace: 'nowrap' }}>Foreseeti AB</span>
             </a>
             .
           </p>
