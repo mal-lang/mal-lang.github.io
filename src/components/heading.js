@@ -42,8 +42,8 @@ const Heading = ({ mobile }) => (
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
+        marginBottom: 2,
+        marginTop: mobile ? '1em' : '1em',
       }}
     />
     <Header
@@ -51,7 +51,7 @@ const Heading = ({ mobile }) => (
       content="Meta Attack Language - M A L"
       inverted
       style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
+        fontSize: mobile ? '1.5em' : '2em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
